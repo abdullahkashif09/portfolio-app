@@ -1,0 +1,147 @@
+.projects-container {
+    background-color: #303030;
+    background-image: url(../assets/projects-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+.projects-title{
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    color: var(--primary-color);
+    font-family: var(--decorative-font);
+}
+
+.projects-list-container {
+    margin: 0px 10%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.project-card-container {
+    display: block;
+    margin: 20px auto;
+    width: 325px;
+    height: 410px;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    box-shadow: -10px 10px 30px var(--primary-color);
+}
+
+.project-card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 30px var(--primary-color);
+}
+
+.project-card-name {
+    width: 325px;
+    height: 50px;
+    background-color: var(--primary-color);
+    font-size: 2rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card-image {
+    width: 325px;
+    height: 160px;
+}
+
+.project-card-image img {
+    width: 325px;
+    height: 160px;
+}
+
+.project-card-skills {
+    width: 325px;
+    height: 25px;
+    background-color: var(--primary-color);
+}
+
+.project-card-skills ul {
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    grid-gap: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card-skills li {
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.project-card-description {
+    width: 325px;
+    height: 125px;
+    background-color: #303030;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.project-card-link {
+    width: 325px;
+    height: 50px;
+    background-color: var(--primary-color);
+}
+
+.project-card-link a {
+    text-decoration: none;
+    width: 325px;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.project-card-link a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .projects-container {
+        margin: 0px 0%;
+    }
+
+    .projects-list-container {
+        margin: 0px 5%;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 20px;
+    }
+
+    .project-card-image {
+        width: 325px;
+        height: 160px;
+    }
+    
+    .project-card-image img {
+        width: 325px;
+        height: 160px;
+    }
+}
